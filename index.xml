@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Joshua Bautista</title>
+    <link>https://EJoshuaB.github.io/</link>
+    <description>Recent content in Home on Joshua Bautista</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://EJoshuaB.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bijections Are Funny</title>
+      <link>https://EJoshuaB.github.io/post/bijections-are-funny/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://EJoshuaB.github.io/post/bijections-are-funny/</guid>
+      <description>A personal favorite style of problem of mine are problems that can seem very scary but admit pretty cute/short bijection solutions, so here&amp;rsquo;s a short collection of a couple of them I did recently, with a bit of motivation and a very handwavy explanation of them.&#xA;On the easier side we have a C1 from the 2014 IMO Shortlist. The statement is as follows:&#xA;IMO Shortlist 2014 C1 Let \(n\) points be given inside a rectangle \(R\) such that no two of them lie on a line parallel to one of the sides of \(R\).</description>
+    </item>
+    <item>
+      <title>Happy to be Here</title>
+      <link>https://EJoshuaB.github.io/blog/2024/08/12/happy-to-be-here/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://EJoshuaB.github.io/blog/2024/08/12/happy-to-be-here/</guid>
+      <description>IMO Journal Man, it’s over now. Just like that a good part of what I spent my highschool life doing has come to a close. I did it, I competed at the IMO, I got an HM which is definitely not what I would’ve wanted but getting it has definitely shaped me in many ways I never imagined it would. Let me first go over what happened.&#xA;Day 1 (Transit):</description>
+    </item>
+    <item>
+      <title>About Hugo XMin</title>
+      <link>https://EJoshuaB.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://EJoshuaB.github.io/about/</guid>
+      <description>XMin is the first Hugo theme I have designed. The original reason that I wrote it was I needed a minimal example of Hugo themes when I was writing the blogdown book. Basically I wanted a simple theme that supports a navigation menu, a home page, other single pages, lists of pages, blog posts, categories, tags, and RSS. That is all. Nothing fancy. In terms of CSS and JavaScript, I really want to keep them minimal.</description>
+    </item>
+  </channel>
+</rss>
