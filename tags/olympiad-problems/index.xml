@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Olympiad Problems on Joshua Bautista</title>
-    <link>http://localhost:1313/tags/olympiad-problems/</link>
+    <link>https://EJoshuaB.github.io/tags/olympiad-problems/</link>
     <description>Recent content in Olympiad Problems on Joshua Bautista</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/olympiad-problems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://EJoshuaB.github.io/tags/olympiad-problems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bijections Are Funny</title>
-      <link>http://localhost:1313/post/bijections-are-funny/</link>
+      <link>https://EJoshuaB.github.io/post/bijections-are-funny/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/bijections-are-funny/</guid>
+      <guid>https://EJoshuaB.github.io/post/bijections-are-funny/</guid>
       <description>A personal favorite style of problem of mine are problems that can seem very scary but admit pretty cute/short bijection solutions, so here&amp;rsquo;s a short collection of a couple of them I did recently, with a bit of motivation and a very handwavy explanation of them.&#xA;On the easier side we have a C1 from the 2014 IMO Shortlist. The statement is as follows:&#xA;IMO Shortlist 2014 C1 Let \(n\) points be given inside a rectangle \(R\) such that no two of them lie on a line parallel to one of the sides of \(R\).</description>
     </item>
   </channel>

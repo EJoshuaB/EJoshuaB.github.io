@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Joshua Bautista</title>
-    <link>http://localhost:1313/</link>
+    <link>https://EJoshuaB.github.io/</link>
     <description>Recent content in Home on Joshua Bautista</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://EJoshuaB.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bijections Are Funny</title>
-      <link>http://localhost:1313/post/bijections-are-funny/</link>
+      <link>https://EJoshuaB.github.io/post/bijections-are-funny/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/bijections-are-funny/</guid>
+      <guid>https://EJoshuaB.github.io/post/bijections-are-funny/</guid>
       <description>A personal favorite style of problem of mine are problems that can seem very scary but admit pretty cute/short bijection solutions, so here&amp;rsquo;s a short collection of a couple of them I did recently, with a bit of motivation and a very handwavy explanation of them.&#xA;On the easier side we have a C1 from the 2014 IMO Shortlist. The statement is as follows:&#xA;IMO Shortlist 2014 C1 Let \(n\) points be given inside a rectangle \(R\) such that no two of them lie on a line parallel to one of the sides of \(R\).</description>
     </item>
     <item>
       <title>Im glad I failed</title>
-      <link>http://localhost:1313/blog/2024/08/12/im-glad-i-failed/</link>
+      <link>https://EJoshuaB.github.io/blog/2024/08/12/im-glad-i-failed/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/08/12/im-glad-i-failed/</guid>
+      <guid>https://EJoshuaB.github.io/blog/2024/08/12/im-glad-i-failed/</guid>
       <description>Reflecting on my non-medal performance Last July I was able to compete at the 65th IMO held in the UK as PHI1, which was a lot of fun. Being at the lectures, hanging out with my team, thinking about the problems after the test, and being in the community that I had dreamed of being in since I was like 11 was surreal to me. That being said I get to the test with no sleep on the first day but prepared on the next and my score ended up being 5/0/0 7/0/0, a full solve meaning I guaranteed myself an HM but 4 points away from a total that would have garnered me a medal, and this was perhaps the best result I could have asked for.</description>
     </item>
     <item>
       <title>About Hugo XMin</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://EJoshuaB.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://EJoshuaB.github.io/about/</guid>
       <description>XMin is the first Hugo theme I have designed. The original reason that I wrote it was I needed a minimal example of Hugo themes when I was writing the blogdown book. Basically I wanted a simple theme that supports a navigation menu, a home page, other single pages, lists of pages, blog posts, categories, tags, and RSS. That is all. Nothing fancy. In terms of CSS and JavaScript, I really want to keep them minimal.</description>
     </item>
   </channel>

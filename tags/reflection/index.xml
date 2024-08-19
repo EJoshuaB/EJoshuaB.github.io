@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reflection on Joshua Bautista</title>
-    <link>http://localhost:1313/tags/reflection/</link>
+    <link>https://EJoshuaB.github.io/tags/reflection/</link>
     <description>Recent content in Reflection on Joshua Bautista</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://EJoshuaB.github.io/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Im glad I failed</title>
-      <link>http://localhost:1313/blog/2024/08/12/im-glad-i-failed/</link>
+      <link>https://EJoshuaB.github.io/blog/2024/08/12/im-glad-i-failed/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024/08/12/im-glad-i-failed/</guid>
+      <guid>https://EJoshuaB.github.io/blog/2024/08/12/im-glad-i-failed/</guid>
       <description>Reflecting on my non-medal performance Last July I was able to compete at the 65th IMO held in the UK as PHI1, which was a lot of fun. Being at the lectures, hanging out with my team, thinking about the problems after the test, and being in the community that I had dreamed of being in since I was like 11 was surreal to me. That being said I get to the test with no sleep on the first day but prepared on the next and my score ended up being 5/0/0 7/0/0, a full solve meaning I guaranteed myself an HM but 4 points away from a total that would have garnered me a medal, and this was perhaps the best result I could have asked for.</description>
     </item>
   </channel>
