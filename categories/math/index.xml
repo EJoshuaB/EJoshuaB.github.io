@@ -6,8 +6,15 @@
     <description>Recent content in Math on Joshua Bautista</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Aug 2024 22:37:00 +0800</lastBuildDate>
     <atom:link href="https://EJoshuaB.github.io/categories/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introductory Real Analysis and Topology Notes</title>
+      <link>https://EJoshuaB.github.io/post/realanal/</link>
+      <pubDate>Mon, 26 Aug 2024 22:37:00 +0800</pubDate>
+      <guid>https://EJoshuaB.github.io/post/realanal/</guid>
+      <description>This was written from the perspective of a highschool math oly student, please don&amp;rsquo;t expect anything too concrete.&#xA;Metric Spaces A metric space is defined like groups are, over some set of points \(M\) and some distance function \(d\) called a metric. Formally \(d: M \times M \mapsto \mathbb{R}_{\geq 0}\) Any metric space has the following conditions for \(x,y,z\in M\):&#xA;\(d(x,y) \geq 0\) with equality at \(x=y\) \(d(x,y) = d(y,x)\) \(d(x,y) \leq d(x,z) + d(z,y)\), so the triangle inequality holds.</description>
+    </item>
     <item>
       <title>Bijections Are Funny</title>
       <link>https://EJoshuaB.github.io/post/bijections-are-funny/</link>

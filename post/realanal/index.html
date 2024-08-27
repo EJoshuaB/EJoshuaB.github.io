@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introductory Real Analysis and Topology Notes | Joshua Bautista</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/post/">Posts</a></li>
+      
+      <li><a href="/blog/">Blogs</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Introductory Real Analysis and Topology Notes</span></h1>
+<h2 class="author">Joshua Bautista</h2>
+<h2 class="date">2024/08/26</h2>
+</div>
+
+<main>
+<p>This was written from the perspective of a highschool math oly student, please don&rsquo;t expect anything too concrete.</p>
+<h2 id="metric-spaces">Metric Spaces</h2>
+<p>A metric space is defined like groups are, over some set of points \(M\) and some distance function \(d\) called a <em>metric</em>. Formally \(d: M \times M \mapsto \mathbb{R}_{\geq 0}\) Any metric space has the following conditions for \(x,y,z\in M\):</p>
+<ul>
+<li>\(d(x,y) \geq 0\) with equality at \(x=y\)</li>
+<li>\(d(x,y) = d(y,x)\)</li>
+<li>\(d(x,y) \leq d(x,z) + d(z,y)\), so the triangle inequality holds.</li>
+</ul>
+<p>Note that this is enough to imply that \(d\) is a continuous function in \(M\) by using the triangle inequality ‘on a line.’</p>
+<hr>
+<p>The following are a list of definitions, for the most part they are intuitive by the name alone?</p>
+<p><strong>A neighborhood (or a ball)</strong>: For \(x \in M\) and real \(r\), the set of all points \(y\) such that \(d(x,y) < r\). This is denoted by \(M_r(x)\) and is called the \(r\)-neighborhood of \(x\). If there’s a difference to a ball I literally cannot tell.</p>
+<p><strong>Convergence</strong>: Given a sequence \(\{x_n\}_{n\geq1}\) in \(M\), we say that it converges to some point \(x\) if for every \(\epsilon>0\), \(d(x,x_n) < \epsilon\) for all sufficiently large \(n\). We can write \(\lim_{n \to \infty}x_n =x\).</p>
+<p><strong>Open</strong>: A subset \(A \subseteq M\) is called <em>open</em> if every point in \(K\) has some neighborhood contained entirely in \(M\). Note that \(K\) being a subset as one of the reasons this definition makes sense.</p>
+<p><strong>Continuous</strong>: A function \(f: M \to N\) is defined as continuous if for every \(p \in M\) and \(\epsilon >0\) there exists \(\delta > 0\) such that \(d_1(x,p)<\delta \implies d_2(f(x),f(p))<\epsilon\) where \(d_1\) and \(d_2\) are the respective distance functions.</p>
+<p>From this we can note that \(\lim_{n\to \infty}f(x_n) = f(x)\). Furthermore if \(f\) if bijective and \(f^{-1}\) is <em>also continuous</em> then \(M \sim N\) are homeomorphic</p>
+<p><strong>Cauchy Sequence</strong>: A sequence \((x_n)_{n\geq 1}\) is <em>Cauchy</em> if \(d(x_m,x_n) < \epsilon\) for sufficiently large \(m,n\).</p>
+<p><strong>Complete</strong>: \(M\) is complete if every Cauchy sequence converges.</p>
+<p><strong>Limit Point</strong>: A limit point is a point \(x \in A\) such that every neighborhood of \(x\) is nonempty in \(A\). Additionally, any limit point can be thought of as the ‘limit of some converging sequence,’ hence the name. These definitions are equivalent because we can construct a converging sequence from the first definition.</p>
+<p><strong>Closed</strong>: A subset \(A \subseteq M\) is called <em>closed</em> if for every converging sequence \((x_n)\) in \(A\), their limit is also in \(A\). In particular, every limit point of \(A\) is a point in \(A\). If the converse holds too then \(A\) is <em>perfect.</em></p>
+<p><strong>Bounded</strong>: \(M\) is <em>bounded</em> if the distance between any two points in \(M\) is bounded. If \(M \subseteq N\) then it’s sufficient that for some point \(n \in N\) and any \(m \in M\) we have \(d(n,m) < C\) for constant \(C\).</p>
+<p><strong>Totally Bounded</strong>: \(M\) is <em>totally bounded</em> if \(M\) can be covered by finitely many \(\epsilon\)-neighborhoods for any epsilon. In particular, this implies \(M\) is bounded by the triangle inequality.</p>
+<p><strong>Dense</strong>: \(N \subset M\) is dense if every point in \(M\) is either in \(N\) or a limit point of \(N\).</p>
+<hr>
+<h3 id="theorems-and-all-that-pt1">Theorems and all that pt.1</h3>
+<p>From our definition of an open set, we can actually arrive at an equivalent definition of continuous</p>
+<blockquote>
+<p>\(f\) is a continuous function iff every open set’s preimage is open.</p>
+</blockquote>
+<ul>
+<li>If we have continuity then for every open set it is sufficient to consider the neighborhood of an arbitrary point, and noting the preimage of that neighborhood is also inside the open set.</li>
+<li>If we have the fact that every open set’s preimage is open then consider the preimage of a neighborhood of some point. This is also a neighborhood by the assumption and since this works for any arbitrary point this implies continuous.</li>
+</ul>
+<blockquote>
+<p>Open and closed are two sides of the same coin. In particular, \(A \subseteq M\) is open iff it’s complement \(B = M/A\) is closed.</p>
+</blockquote>
+<p>By name this is intuitive, but by the definitions this is harder to see. The proof one way can easily be backtracked to show the other, so we will show that if \(A\) is open then \(B\) is closed.</p>
+<p>Let \(x\) be a limit point of \(B\). FTSOC assume \(x \in A\), then \(\exists \epsilon\) such that \(N_{\epsilon}(x) \subset A\), but this contradicts the fact that \(x\) is a limit point of \(B\), so every limit point of \(B\) is in \(B\). We are done.</p>
+<blockquote>
+<p>Banach Fixed Point Theorem: If \(M\) is a complete metric, then any continuous function \(T: M \to M\) such that \(d(T(x),T(y)) \leq qd(x,y)\) for some fixed \(q \in [0,1)\) and all \((x,y) \in M^2\) has exactly one fixed point.</p>
+</blockquote>
+<p>First note that there is at most 1 fixed point, because otherwise their distance would be invariant under \(T\). Now for arbitrary \(x\) define the sequence \(x_1 = x\) and \(x_{n+1} = T(x_n)\) for all \(n \geq 1\). Note that</p>
+$$d(x_n, T(x_n)) = q^{n-1}d(x_1,T(x_1))$$
+<p>so \((x_n)\) is in fact Cauchy. Since \(M\) is complete this sequence converges. That point is our desired fixed point.</p>
+<hr>
+<h3 id="examples-that-i-liked">Examples that I liked</h3>
+<p><strong>Example 1.</strong> Prove that a function \(f: \mathbb{R} \to \mathbb{R}\) that is strictly increasing must be continuous at some point.</p>
+<p>The idea is to considering some interval \([a,b]\). Heuristically, if \(f\) is strictly increasing and not continuous anywhere then there would be ‘too many instantaneous jumps to fit on a finite interval.  Assume FTSOC it’s not continuous anywhere. Take \(\delta_x < f(y) - f(x)\) for every \(y > x\) where \(\delta_x\) is maximal.</p>
+<hr>
+<h2 id="topological-spaces">Topological Spaces</h2>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  Joshua Bautista 2024 &ndash; 2024 | <a href="https://github.com/EJoshuaB">Github</a> | Email: <a href="mailto:ervinjoshuab@gmail.com">ervinjoshuab@gmail.com</a>
+  
+  </footer>
+  </body>
+</html>
+
