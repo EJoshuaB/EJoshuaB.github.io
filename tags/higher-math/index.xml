@@ -13,7 +13,7 @@
       <link>https://EJoshuaB.github.io/post/realanal/</link>
       <pubDate>Mon, 26 Aug 2024 22:37:00 +0800</pubDate>
       <guid>https://EJoshuaB.github.io/post/realanal/</guid>
-      <description>This was written from the perspective of a highschool math oly student, please don&amp;rsquo;t expect anything too concrete.&#xA;Metric Spaces A metric space is defined like groups are, over some set of points \(M\) and some distance function \(d\) called a metric. Formally \(d: M \times M \mapsto \mathbb{R}_{\geq 0}\) Any metric space has the following conditions for \(x,y,z\in M\):&#xA;\(d(x,y) \geq 0\) with equality at \(x=y\) \(d(x,y) = d(y,x)\) \(d(x,y) \leq d(x,z) + d(z,y)\), so the triangle inequality holds.</description>
+      <description>Simply notes from an oly guy.&#xA;Metric Spaces A metric space is defined like groups are, over some set of points \(M\) and some distance function \(d\) called a metric. Formally \(d: M \times M \mapsto \mathbb{R}_{\geq 0}\) Any metric space has the following conditions for \(x,y,z\in M\):&#xA;\(d(x,y) \geq 0\) with equality at \(x=y\) \(d(x,y) = d(y,x)\) \(d(x,y) \leq d(x,z) + d(z,y)\), so the triangle inequality holds. Note that this is enough to imply that \(d\) is a continuous function in \(M\) by using the triangle inequality ‘on a line.</description>
     </item>
   </channel>
 </rss>
