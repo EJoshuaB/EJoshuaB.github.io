@@ -72,6 +72,7 @@
 </blockquote>
 <p>By name this is intuitive, but by the definitions this is harder to see. The proof one way can easily be backtracked to show the other, so we will show that if \(A\) is open then \(B\) is closed.</p>
 <p>Let \(x\) be a limit point of \(B\). FTSOC assume \(x \in A\), then \(\exists \epsilon\) such that \(N_{\epsilon}(x) \subset A\), but this contradicts the fact that \(x\) is a limit point of \(B\), so every limit point of \(B\) is in \(B\). We are done.</p>
+<p><img src="/OpenClosed.png" alt="OpenClosed"></p>
 <blockquote>
 <p>Banach Fixed Point Theorem: If \(M\) is a complete metric, then any continuous function \(T: M \to M\) such that \(d(T(x),T(y)) \leq qd(x,y)\) for some fixed \(q \in [0,1)\) and all \((x,y) \in M^2\) has exactly one fixed point.</p>
 </blockquote>
@@ -97,6 +98,7 @@ $$d(x_n, T(x_n)) = q^{n-1}d(x_1,T(x_1))$$
 <p><strong>Connected</strong>: A space is <em>connected</em> if \(\exists\) nontrivial open sets that are closed. Define disconnected similarly.</p>
 <p><strong>Path</strong>: A path is a continuous function between two points, in particular we take \(f: [a,b] \to X\) for some non-trivial interval. Notably, a space is <em>path connected</em> if any two points have a path between them.</p>
 <p><strong>Homotopy</strong>: A path homotopy on \(f,g: [a,b] \to X\) is a continuous function \(\mathcal{P}: [a,b] \times [a,b] \to X\) on the space between the two paths. In particular \(\mathcal{P}(0,x) \in f\) and \(\mathcal{P}(x,0) \in g\).</p>
+<p><img src="/PathHomotopy.png" alt="PathHomotopy"></p>
 <p><strong>Simply Connected</strong>: A space is simply connected if any two paths are homotopic.</p>
 <p><strong>Basis</strong>: A basis of a topological is a set of open sets, of which every other open set is the union of some.</p>
 
