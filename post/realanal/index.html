@@ -47,13 +47,13 @@
 <p>The following are a list of definitions, for the most part they are intuitive by the name alone?</p>
 <p><strong>A neighborhood (or a ball)</strong>: For \(x \in M\) and real \(r\), the set of all points \(y\) such that \(d(x,y) < r\). This is denoted by \(M_r(x)\) and is called the \(r\)-neighborhood of \(x\). If there’s a difference to a ball I literally cannot tell.</p>
 <p><strong>Convergence</strong>: Given a sequence \(\{x_n\}_{n\geq1}\) in \(M\), we say that it converges to some point \(x\) if for every \(\epsilon>0\), \(d(x,x_n) < \epsilon\) for all sufficiently large \(n\). We can write \(\lim_{n \to \infty}x_n =x\).</p>
-<p><strong>Open</strong>: A subset \(A \subseteq M\) is called <em>open</em> if every point in \(K\) has some neighborhood contained entirely in \(M\). Note that \(K\) being a subset as one of the reasons this definition makes sense.</p>
+<p><strong>Open</strong>: A subset \(A \subseteq M\) is called <em>open</em> if every point in \(K\) has some neighborhood contained entirely in \(M\). Note that \(K\) being a subset as one of the reasons this definition makes sense. The union is a (possibly infinite) collection of open sets is open.</p>
 <p><strong>Continuous</strong>: A function \(f: M \to N\) is defined as continuous if for every \(p \in M\) and \(\epsilon >0\) there exists \(\delta > 0\) such that \(d_1(x,p)<\delta \implies d_2(f(x),f(p))<\epsilon\) where \(d_1\) and \(d_2\) are the respective distance functions.</p>
-<p>From this we can note that \(\lim_{n\to \infty}f(x_n) = f(x)\). Furthermore if \(f\) if bijective and \(f^{-1}\) is <em>also continuous</em> then \(M \sim N\) are homeomorphic</p>
+<p>From this we can note that \(\lim_{n\to \infty}f(x_n) = f(x)\). Furthermore if \(f\) if bijective and \(f^{-1}\) is <em>also continuous</em> then \(M ~ N\) are homeomorphic. Further furthermore, if the size condition ‘holds everywhere,’ in particular if we can write \(d(x,y) < \delta \implies d(f(x),f(y)) < \epsilon\) for <em>general</em> \(x\) and \(y\) then the function is known as Uniformly Continuous.</p>
 <p><strong>Cauchy Sequence</strong>: A sequence \((x_n)_{n\geq 1}\) is <em>Cauchy</em> if \(d(x_m,x_n) < \epsilon\) for sufficiently large \(m,n\).</p>
 <p><strong>Complete</strong>: \(M\) is complete if every Cauchy sequence converges.</p>
 <p><strong>Limit Point</strong>: A limit point is a point \(x \in A\) such that every neighborhood of \(x\) is nonempty in \(A\). Additionally, any limit point can be thought of as the ‘limit of some converging sequence,’ hence the name. These definitions are equivalent because we can construct a converging sequence from the first definition.</p>
-<p><strong>Closed</strong>: A subset \(A \subseteq M\) is called <em>closed</em> if for every converging sequence \((x_n)\) in \(A\), their limit is also in \(A\). In particular, every limit point of \(A\) is a point in \(A\). If the converse holds too then \(A\) is <em>perfect.</em></p>
+<p><strong>Closed</strong>: A subset \(A \subseteq M\) is called <em>closed</em> if for every converging sequence \((x_n)\) in \(A\), their limit is also in \(A\). In particular, every limit point of \(A\) is a point in \(A\). If the converse holds too then \(A\) is <em>perfect.</em> The intersection of a (possibly infinite) collection of closed sets is closed.</p>
 <p><strong>Bounded</strong>: \(M\) is <em>bounded</em> if the distance between any two points in \(M\) is bounded. If \(M \subseteq N\) then it’s sufficient that for some point \(n \in N\) and any \(m \in M\) we have \(d(n,m) < C\) for constant \(C\).</p>
 <p><strong>Totally Bounded</strong>: \(M\) is <em>totally bounded</em> if \(M\) can be covered by finitely many \(\epsilon\)-neighborhoods for any epsilon. In particular, this implies \(M\) is bounded by the triangle inequality.</p>
 <p><strong>Dense</strong>: \(N \subset M\) is dense if every point in \(M\) is either in \(N\) or a limit point of \(N\).</p>
@@ -74,7 +74,7 @@
 <p>Let \(x\) be a limit point of \(B\). FTSOC assume \(x \in A\), then \(\exists \epsilon\) such that \(N_{\epsilon}(x) \subset A\), but this contradicts the fact that \(x\) is a limit point of \(B\), so every limit point of \(B\) is in \(B\). We are done.</p>
 <p><img src="/OpenClosed.png" alt="OpenClosed"></p>
 <blockquote>
-<p>Banach Fixed Point Theorem: If \(M\) is a complete metric, then any continuous function \(T: M \to M\) such that \(d(T(x),T(y)) \leq qd(x,y)\) for some fixed \(q \in [0,1)\) and all \((x,y) \in M^2\) has exactly one fixed point.</p>
+<p><strong>Banach Fixed Point Theorem:</strong> If \(M\) is a complete metric, then any continuous function \(T: M \to M\) such that \(d(T(x),T(y)) \leq qd(x,y)\) for some fixed \(q \in [0,1)\) and all \((x,y) \in M^2\) has exactly one fixed point.</p>
 </blockquote>
 <p>First note that there is at most 1 fixed point, because otherwise their distance would be invariant under \(T\). Now for arbitrary \(x\) define the sequence \(x_1 = x\) and \(x_{n+1} = T(x_n)\) for all \(n \geq 1\). Note that</p>
 $$d(x_n, T(x_n)) = q^{n-1}d(x_1,T(x_1))$$
@@ -101,6 +101,47 @@ $$d(x_n, T(x_n)) = q^{n-1}d(x_1,T(x_1))$$
 <p><img src="/PathHomotopy.png" alt="PathHomotopy"></p>
 <p><strong>Simply Connected</strong>: A space is simply connected if any two paths are homotopic.</p>
 <p><strong>Basis</strong>: A basis of a topological is a set of open sets, of which every other open set is the union of some.</p>
+<hr>
+<h3 id="compactness">Compactness</h3>
+<p>Here we state two equivalent definitions of compactness</p>
+<ul>
+<li><strong>Sequential</strong>: A metric space is <em>sequentially compact</em> if every sequence has a converging subsequence, this is notably infinite.</li>
+<li><strong>Open Covered</strong>: First, an open cover of a set \(S \subseteq X\) is a collection \((G_n)\) of open subsets s.t. \( S \subset \bigcup G_n\). \(S\) is <em>compact</em> if we can take a finite number of these subsets and still cover \(S\).</li>
+</ul>
+<p>Note that the second includes topological spaces. Here’s a couple of nice implications:</p>
+<ul>
+<li>On metric spaces, these two definitions are equivalent.</li>
+<li>\(S \subset X \subset Y\), \(S\) is compact wrt \(Y\) iff it is compact wrt \(X\).</li>
+<li>A closed subset of a compact set is compact.</li>
+<li>Compact sets are totally bounded (consider the finite cover).</li>
+<li>On a continuous function, the image of a compact set is compact. Moreover on compact sets, any continuous function is uniformly continuous.</li>
+<li>\(f: X \to \mathbb{R}\) if \(f\) is continuous and \(X\) is compact then \(f\) has a maximum.</li>
+</ul>
+<hr>
+<h3 id="theorems-and-all-that-pt2">Theorems and all that pt.2</h3>
+<blockquote>
+<p><strong>Heine-Borel and Bolzano-Weierstraß:</strong> A set in \(M\) is closed and bounded iff it is compact and sequentially compact.</p>
+</blockquote>
+<blockquote>
+<p><strong>Tychnoff:</strong> The product of any set of compact topological spaces is compact.</p>
+</blockquote>
+<hr>
+<h3 id="examples">Examples</h3>
+<blockquote>
+<p>Consider a collection \((G_n)\) of compact subsets. If the intersection of every finite subcollection of these is nonempty, then \(\bigcup G_n \neq \{\}\).</p>
+</blockquote>
+<blockquote>
+<p>Can \(\mathbb{R}^2\) be partitioned into disjoint non-trivial disk boundaries? What if we exclude finitely many points?</p>
+</blockquote>
+<p>For the case with no points excluded, consider the open sets determined by the disks, then by the first example, all the disks inside one of the disks have a non-empty intersection.</p>
+<hr>
+<p>List of resources:</p>
+<ol>
+<li>Analysis II by Terence Tao</li>
+<li>Principles of Mathematical Analysis by Rudin W.</li>
+<li>Napkin by Evan Chen</li>
+<li>Real Mathematical Analysis by Charles Pugh</li>
+</ol>
 
 </main>
 
