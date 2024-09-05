@@ -95,9 +95,9 @@ $$d(x_n, T(x_n)) = q^{n-1}d(x_1,T(x_1))$$
 <hr>
 <p><strong>Hausdorff</strong>: A topological space \(X\) is <em>Hausdorff</em> if any two points in \(X\) have some non-intersecting open neighborhoods.</p>
 <p><strong>Subspace</strong>: We can define a subspace \(S \subseteq X\) by taking \(K \cap S\) for \(K \subseteq X\) as the open subsets.</p>
-<p><strong>Connected</strong>: A space is <em>connected</em> if \(\exists\) nontrivial open sets that are closed. Define disconnected similarly.</p>
-<p><strong>Path</strong>: A path is a continuous function between two points, in particular we take \(f: [a,b] \to X\) for some non-trivial interval. Notably, a space is <em>path connected</em> if any two points have a path between them.</p>
-<p><strong>Homotopy</strong>: A path homotopy on \(f,g: [a,b] \to X\) is a continuous function \(\mathcal{P}: [a,b] \times [a,b] \to X\) on the space between the two paths. In particular \(\mathcal{P}(0,x) \in f\) and \(\mathcal{P}(x,0) \in g\).</p>
+<p><strong>Connected</strong>: A space is <em>connected</em> if \(\not\exists\) nontrivial open sets that are closed. Define disconnected similarly. In particular, if \(X\) is disconnected, then there exists two disjoint open sets whose union is \(X\)</p>
+<p><strong>Path</strong>: A path is a continuous function between two points, in particular we take \(f: [a,b] \to X\) for some non-trivial interval. Notably, a space is <em>path connected</em> if any two points have a path between them. Here we use a closed interval because it intuitively and nicely holds all the properties we want, it’s closed and connected. All we’re doing here is saying we can take a ‘full line’ and stretch it out on the space of \(X\) between the two points we want.</p>
+<p><strong>Homotopy</strong>: A path homotopy on \(f,g: [a,b] \to X\) is a continuous function \(\mathcal{P}: [a,b] \times [a,b] \to X\) on the space between the two paths. In particular \(\mathcal{P}(0,x) \in f\) and \(\mathcal{P}(x,0) \in g\). This is just to say “there are no holes in the space between two paths,” and again we take a nice connected space we already know of, a shape on the real plane, and then stretch it out over \(X\).</p>
 <p><img src="/PathHomotopy.png" alt="PathHomotopy"></p>
 <p><strong>Simply Connected</strong>: A space is simply connected if any two paths are homotopic.</p>
 <p><strong>Basis</strong>: A basis of a topological is a set of open sets, of which every other open set is the union of some.</p>
